@@ -3,18 +3,42 @@
     margin: 0;
 }
 
+
+
+@font-face {
+    font-family: "Futura-Bol";
+    src: url("fonts/Futura-Bol.ttf") format ("truetype");
+}
+
+body nav ul li a {
+    font-family: "Futura", sans-serif;
+}
+
+body h2 {
+    font-family: "Futura", sans-serif;
+}
+
+body h3 {
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Meiryo", "メイリオ", "Osaka", "MS PGothic", sans-serif;
+}
+
+body p {
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Meiryo", "メイリオ", "Osaka", "MS PGothic", sans-serif;
+}
+
+
 /*-headerについて----------------------*/
 
-header{
+header {
     position: relative;
     height: 100vh;
 }
 
-.bg-slider{
+.bg-slider {
     height: 100vh;
     -webkit-background-size: cover;
     background-size: cover;
- }
+}
 
 
 
@@ -51,7 +75,7 @@ nav ul li {
     font-size: 27px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: #fff;
 }
@@ -192,11 +216,23 @@ button:hover {
 
 /*-courseについて---------------*/
 
+
 #course {
     background-color: #D6E6F9;
     width: 100vw;
     height: 950px;
     padding-top: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+}
+
+#course canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 #course h2 {
@@ -315,7 +351,7 @@ button:hover {
 
 /*-imagesについて---------------*/
 
-#images .wrapper{
+#images .wrapper {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -329,8 +365,8 @@ button:hover {
     height: 180px;
 }
 
-.slick div{
-    transition:none;
+.slick div {
+    transition: none;
 }
 
 
