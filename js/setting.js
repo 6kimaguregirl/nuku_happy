@@ -1,9 +1,9 @@
-particlesJS("#course",{
+particlesJS("course",{
   "particles":{
  
 //--シェイプの設定----------
       "number":{
-        "value":80, //シェイプの数
+        "value":30, //シェイプの数
         "density":{
           "enable":true, //シェイプの密集度を変更するか否か
           "value_area":200 //シェイプの密集度
@@ -40,11 +40,11 @@ particlesJS("#course",{
         }
       },
       "size":{
-        "value":5, //シェイプの大きさ
+        "value":3, //シェイプの大きさ
         "random":true, //シェイプの大きさをランダムにするか否か
         "anim":{
           "enable":false, //シェイプの大きさをアニメーションさせるか否か
-          "speed":40, //アニメーションのスピード
+          "speed":1000, //アニメーションのスピード
           "size_min":0.1, //大きさの最小値
           "sync":false //全てのシェイプを同時にアニメーションさせるか否か
         }
@@ -63,7 +63,7 @@ particlesJS("#course",{
 
 //--動きの設定----------
       "move":{
-        "speed":10, //シェイプの動くスピード
+        "speed":5, //シェイプの動くスピード
         "straight":false, //個々のシェイプの動きを止めるか否か
         "direction":"none", //エリア全体の動き(none、top、top-right、right、bottom-right、bottom、bottom-left、left、top-leftより選択)
         "out_mode":"out" //エリア外に出たシェイプの動き(out、bounceより選択)
@@ -77,17 +77,21 @@ particlesJS("#course",{
       "events":{
 
 //--マウスオーバー時の処理----------
-        "onhover":{
+      /*  "onhover":{
           "enable":true, //マウスオーバーが有効か否か
           "mode":"repulse" //マウスオーバー時に発動する動き(下記modes内のgrab、repulse、bubbleより選択)
         },
+        
+        */
 //--------------------
 
 //--クリック時の処理----------
-        "onclick":{
+     /*   "onclick":{
           "enable":true, //クリックが有効か否か
           "mode":"push" //クリック時に発動する動き(下記modes内のgrab、repulse、bubble、push、removeより選択)
         },
+        
+    */
 //--------------------
 
       },
@@ -96,7 +100,6 @@ particlesJS("#course",{
 
 //--カーソルとシェイプの間に線が表示される----------
         "grab":{
-          "distance":400, //カーソルからの反応距離
           "line_linked":{
             "opacity":1 //線の透明度
           }
@@ -104,7 +107,7 @@ particlesJS("#course",{
 //--------------------
 
 //--シェイプがカーソルから逃げる----------
-        "repulse":{
+    /*   "repulse":{
           "distance":200 //カーソルからの反応距離
         },
 //--------------------
@@ -129,11 +132,16 @@ particlesJS("#course",{
         "remove":{
           "particles_nb":2 //減るシェイプの数
         }
+        */
 //--------------------
 
       }
+       
     },
+     /*
     "retina_detect":true, //Retina Displayを対応するか否か
     "resize":true //canvasのサイズ変更にわせて拡大縮小するか否か
+    */
   }
+  
 );
