@@ -172,6 +172,7 @@ main h2 {
     margin: 30px 0px;
     display: block;
     margin: 15px auto;
+    outline:none;
 }
 
 /*-Intro_2----------------------------*/
@@ -212,6 +213,7 @@ main h2 {
     margin: 30px 0px;
     display: block;
     margin: 15px auto;
+    outline:none;
 }
 
 /*-courseについて---------------*/
@@ -292,6 +294,7 @@ main h2 {
     color: #fff;
     font-weight: 700;
      border: none;
+    outline:none;
 }
 
 #course button:hover {
